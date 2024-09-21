@@ -20,7 +20,7 @@ let transport;
 let chip = null;
 let esploader;
 
-const version = "fw0.1.48";
+const version = "fw37ba786254c72fb86ba4c0bc623fbc8428452be3";
 
 connectButton.onclick = async () => {
   connectButton.style.display = 'none';
@@ -54,12 +54,22 @@ connectButton.onclick = async () => {
     console.error(e);
   }
 
-  const addressesAndFiles = [
-        {address: '0x1000', fileName: 'bootloader.bin', progressBar: btprogressBar},
-        {address: '0x9000', fileName: 'partition-table.bin', progressBar: ptprogressBar},
-        {address: '0xE000', fileName: 'ota_data_initial.bin', progressBar: otaprogressBar},
-        {address: '0x10000', fileName: 'jade.bin', progressBar: jadeprogressBar},
-    ];
+  var addressesAndFiles = [
+    {address: '0x1000', fileName: 'bootloader.bin', progressBar: btprogressBar},
+    {address: '0x9000', fileName: 'partition-table.bin', progressBar: ptprogressBar},
+    {address: '0xE000', fileName: 'ota_data_initial.bin', progressBar: otaprogressBar},
+    {address: '0x10000', fileName: 'jade.bin', progressBar: jadeprogressBar},
+  ];
+
+  if (diymodelsel.value === "jadeplus" || diymodelsel.value.includes("s3")) {
+      console.log("Using s3 stuff");
+      addressesAndFiles = [
+        {address: '0x0', fileName: 'bootloader.bin', progressBar: btprogressBar},
+        {address: '0x8000', fileName: 'partition-table.bin', progressBar: ptprogressBar},
+        {address: '0x1a000', fileName: 'ota_data_initial.bin', progressBar: otaprogressBar},
+        {address: '0x20000', fileName: 'jade.bin', progressBar: jadeprogressBar},
+      ];
+  }
 
   let fileArray = [];
 
@@ -105,4 +115,4 @@ connectButton.onclick = async () => {
   document.getElementById("success").innerHTML = "Successfully flashed Jade DIY " + version.slice(2) + " on " + diymodelsel.options[diymodelsel.selectedIndex].text;
 };
 
-document.getElementById('jadediyversion').innerHTML = "Jade DIY TAG " + version.slice(2);
+document.getElementById('jadediyversion').innerHTML = "Jade DIY " + version.slice(2);
