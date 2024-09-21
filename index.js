@@ -62,7 +62,6 @@ connectButton.onclick = async () => {
   ];
 
   if (diymodelsel.value === "jadeplus" || diymodelsel.value.includes("s3")) {
-      console.log("Using s3 stuff");
       addressesAndFiles = [
         {address: '0x0', fileName: 'bootloader.bin', progressBar: btprogressBar},
         {address: '0x8000', fileName: 'partition-table.bin', progressBar: ptprogressBar},
