@@ -20,7 +20,7 @@ let transport;
 let chip = null;
 let esploader;
 
-const version = "fw37ba786254c72fb86ba4c0bc623fbc8428452be3";
+const version = "fw1.0.36";
 
 connectButton.onclick = async () => {
   connectButton.style.display = 'none';
@@ -61,7 +61,7 @@ connectButton.onclick = async () => {
     {address: '0x10000', fileName: 'jade.bin', progressBar: jadeprogressBar},
   ];
 
-  if (diymodelsel.value === "jadeplus" || diymodelsel.value.includes("s3")) {
+  if (diymodelsel.value.includes("s3")) {
       addressesAndFiles = [
         {address: '0x0', fileName: 'bootloader.bin', progressBar: btprogressBar},
         {address: '0x8000', fileName: 'partition-table.bin', progressBar: ptprogressBar},
