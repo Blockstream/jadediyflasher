@@ -61,7 +61,7 @@ connectButton.onclick = async () => {
     {address: '0x10000', fileName: 'jade.bin', progressBar: jadeprogressBar},
   ];
 
-  if (diymodelsel.value.includes("s3")) {
+  if ((diymodelsel.value.includes("s3")) || (diymodelsel.value.includes("jade_v2"))) {
       addressesAndFiles = [
         {address: '0x0', fileName: 'bootloader.bin', progressBar: btprogressBar},
         {address: '0x8000', fileName: 'partition-table.bin', progressBar: ptprogressBar},
