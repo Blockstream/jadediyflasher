@@ -20,7 +20,7 @@ let transport;
 let chip = null;
 let esploader;
 
-const version = "fw1.0.37";
+const version = "fw1.0.38";
 
 connectButton.onclick = async () => {
   connectButton.style.display = 'none';
