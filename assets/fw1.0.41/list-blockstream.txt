@@ -1,0 +1,33 @@
+<select name="diymodelsel" id="diymodelsel">
+    <option value="esp32-cam">ESP32-Cam</option>
+    <option value="esp32-s3-devkitc-1">esp32-s3-devkitc-1</option>
+    <option value="esp32-wrover-cam">ESP32-Wrover-cam</option>
+    <option value="m5blackgray">M5Stack Black/Gray</option>
+    <option value="m5core2">M5Stack Core2</option>
+    <option value="m5cores3">M5Stack Core S3</option>
+    <option value="m5fire">M5Stack FIRE</option>
+    <option value="m5stickcplus">M5StickC PLUS</option>
+    <option value="m5stickcplus2">M5StickC PLUS2</option>
+    <option value="tcameraplus">T-Camera Plus</option>
+    <option value="ttgo_tdisplay">LILYGO T-Display</option>
+    <option value="ttgo_tdisplays3">LILYGO T-DisplayS3</option>
+    <option value="ttgo_tdisplays3procamera">LILYGO T-DisplayS3 Pro Camera</option>
+    <option value="ttgo_twatchs3">T-Watch S3</option>
+    <option value="waveshares3_touch_lcd2">Waveshare Touch LCD 2</option>
+    <option value="jade">Jade v1.0 (dev board)</option>
+    <option value="jade_noradio">Jade v1.0 (dev board - no radio)</option>
+    <option value="jade_v1_1">Jade v1.1 (dev board)</option>
+    <option value="jade_v1_1_noradio">Jade v1.1 (dev board - no radio)</option>
+    <option value="jade_v2">Jade v2 (dev board)</option>
+    <option value="jade_v2_noradio">Jade v2 (dev board - no radio)</option>
+    <option value="jade_v2c">Jade v2 core (dev board)</option>
+    <option value="jade_v2c_noradio">Jade v2 core (dev board - no radio)</option>
+    <option value="jade_ci">Jade v1.0 (dev board- ci version)</option>
+    <option value="jade_noradio_ci">Jade v1.0 (dev board - ci no radio version)</option>
+    <option value="jade_v1_1_ci">Jade v1.1 (dev board - ci version)</option>
+    <option value="jade_v1_1_noradio_ci">Jade v1.1 (dev board - ci no radio version)</option>
+    <option value="jade_v2_ci">Jade v2 (dev board - ci version)</option>
+    <option value="jade_v2_noradio_ci">Jade v2 (dev board - ci no radio version)</option>
+    <option value="jade_v2c_ci">Jade v2 core (dev board - ci version)</option>
+    <option value="jade_v2c_noradio_ci">Jade v2 core (dev board - ci no radio version)</option>
+</select>
